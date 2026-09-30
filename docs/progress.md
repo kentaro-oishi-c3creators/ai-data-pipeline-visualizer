@@ -1,7 +1,7 @@
 # Progress
 
 ## Status
-ローカル試作品完成。公開リポジトリを作成し、GitHub Pages 公開を準備中（2026-09-30）。
+ローカル試作品完成。公開リポジトリと GitHub Pages で公開済み（2026-09-30）。
 
 ## Completed
 - 六工程のフロー、アニメーション再生・停止・速度変更・工程選択。
@@ -18,12 +18,13 @@
 - ブラウザ操作: 三分岐で差分 +200 / 一致 / Human review の結果が出ること、逆追跡で元 SQL がハイライトされることを確認した。
 - Pages 想定の `GITHUB_REPOSITORY=kentaro-oishi-c3creators/ai-data-pipeline-visualizer` でビルドし、生成 HTML のアセット URL が `/ai-data-pipeline-visualizer/` 配下になることを確認した。
 - 公開候補ファイルの典型的な認証情報パターンを検索し、該当なし。
+- `main` へ push した commit `527b328` の Pages Actions は成功。公開 URL は HTTP 200、ブラウザで画面と分岐操作を確認。
 
 ## Known issues
 実案件の SQL、定義書、ログとは未接続。画面の値は説明用の架空サンプル。
 
 ## Remaining
-新規公開リポジトリ `kentaro-oishi-c3creators/ai-data-pipeline-visualizer` は作成済み。push、Pages 有効化、公開 URL 検証は未実施。実データ連携と Qlik コード生成・検証は今回の範囲外。
+実データ連携と Qlik コード生成・検証は今回の範囲外。
 
 ## Next step
-ソースを commit・push し、Pages の公開結果を確認する。
+実案件へ広げる場合は、公開可能な匿名化データと業務定義を一組選び、各工程の根拠表示に差し替える。

@@ -1,5 +1,7 @@
 # AI / データ変換パイプライン可視化
 
+[公開デモを開く](https://kentaro-oishi-c3creators.github.io/ai-data-pipeline-visualizer/) · [GitHubのソースを見る](https://github.com/kentaro-oishi-c3creators/ai-data-pipeline-visualizer)
+
 Source SQL → Semantic理解 → 処理単位への分解 → Qlik / 変換ステップ生成 → 統合 → 検証 / レビューを、左から右へ進むアニメーションとして探索するローカル試作品です。工程をクリックすると、入力、AI判断、決定論的処理、検証、Human review、provenance を確認できます。
 
 ## 起動
@@ -15,7 +17,7 @@ npm run dev
 
 ## GitHub Pages で公開する場合
 
-このソースを公開リポジトリの `main` に置き、Repository Settings → Pages → Build and deployment の Source を **GitHub Actions** にします。`main` への push で `.github/workflows/deploy-pages.yml` が依存導入・型検査・ビルド・公開を実行します。公開URLは `https://<owner>.github.io/<repository>/` です。Vite の `base` は Actions 上のリポジトリ名から自動設定し、ローカル起動は `/` のまま動きます。
+公開リポジトリの Pages Source は **GitHub Actions** です。`main` への push で `.github/workflows/deploy-pages.yml` が依存導入・型検査・ビルド・公開を実行します。Vite の `base` は Actions 上のリポジトリ名から自動設定し、ローカル起動は `/` のまま動きます。
 
 `sources/` と `AGENTS.md` はこのローカル作業環境の参照資料で、公開対象から除外します。実案件の情報を追加する際は公開リポジトリと公開ページの両方に載ることを確認してください。
 
